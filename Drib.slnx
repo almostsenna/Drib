@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Drib.vcxproj" Id="7123230a-3158-4119-a4a0-474657ac20d6" />
+</Solution>
