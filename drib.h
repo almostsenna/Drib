@@ -5,36 +5,40 @@
 #include <string>
 using namespace std;
 
-class Drib {
-private:
-    int chyselnyk;   // чисельник
-    int znamenyk;    // знаменник
-    string* history; // динамічне поле (масив рядків)
-    int size;        // розмір масиву
-    int count;       // кількість записів
+namespace MathObjects {
+    namespace Fractions {
+        class Drib {
+        private:
+            int chyselnyk;   
+            int znamenyk;    
+            string* history; 
+            int size;       
+            int count;       
 
-public:
-    // Конструктор і деструктор
-    Drib(int c = 0, int z = 1);
-    ~Drib();
+        public:
+           
+            Drib(int c = 0, int z = 1);
+            ~Drib();
 
-    // Введення даних
-    void vvesty(int c, int z);
+            
+            void vvesty(int c, int z);
 
-    // Ввід з клавіатури
-    void input();
+           
+            void input();
 
-    // Арифметичні операції
-    Drib add(const Drib& other);
-    Drib sub(const Drib& other);
-    Drib mul(const Drib& other);
-    Drib div(const Drib& other);
+           
+            Drib add(const Drib& other);
+            Drib sub(const Drib& other);
+            Drib mul(const Drib& other);
+            Drib div(const Drib& other);
 
-    // Вивід дробу
-    void print();
+         
+            void print();
 
-private:
-    void addHistory(const string& action);
-};
+        private:
+            void addHistory(const string& action);
+        };
+    }
+}
 
 #endif

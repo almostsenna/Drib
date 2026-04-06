@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Drib.h"
 using namespace std;
+using namespace MathObjects::Fractions;
 
 int main() {
     Drib a, b;
